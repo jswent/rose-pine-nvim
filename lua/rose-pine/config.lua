@@ -7,7 +7,7 @@
 ---@alias StyleOptions { bold: boolean, italic: boolean, transparency: boolean }
 ---@alias GroupOptions { border: PaletteColor, link: PaletteColor, panel: PaletteColor, error: PaletteColor, hint: PaletteColor, info: PaletteColor, ok: PaletteColor, warn: PaletteColor, note: PaletteColor, todo: PaletteColor, git_add: PaletteColor, git_change: PaletteColor, git_delete: PaletteColor, git_dirty: PaletteColor, git_ignore: PaletteColor, git_merge: PaletteColor, git_rename: PaletteColor, git_stage: PaletteColor, git_text: PaletteColor, git_untracked: PaletteColor, h1: PaletteColor, h2: PaletteColor, h3: PaletteColor, h4: PaletteColor, h5: PaletteColor, h6: PaletteColor }
 
----@class Options
+---@class (exact) OptionsStrict
 ---@field variant "auto" | Variant
 ---@field dark_variant Variant
 ---@field dim_inactive_windows boolean
@@ -21,7 +21,7 @@
 
 local config = {}
 
----@type Options
+---@type OptionsStrict
 config.options = {
 	---Set the desired variant: "auto" will follow the vim background,
 	---defaulting to `dark_variant` or "main" for dark and "dawn" for light.
