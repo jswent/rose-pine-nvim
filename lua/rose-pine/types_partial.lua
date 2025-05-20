@@ -1,0 +1,11 @@
+---@class (exact) Options : OptionsStrict
+---@field variant? "auto" | Variant
+---@field dark_variant? Variant
+---@field dim_inactive_windows? boolean
+---@field extend_background_behind_borders? boolean
+---@field enable? EnableOptions
+---@field styles? StyleOptions
+---@field palette? table<string, table<string, string>>
+---@field groups? GroupOptions
+---@field highlight_groups? table<string, Highlight>
+---@field before_highlight? fun(group: string, highlight: Highlight, palette: Palette)
