@@ -121,7 +121,7 @@ local function set_highlights()
 		PmenuSel = { fg = palette.text, bg = palette.overlay },
 		PmenuThumb = { bg = palette.muted },
 		Question = { fg = palette.gold },
-		QuickFixLine = { fg = palette.foam },
+		-- QuickFixLink = {},
 		-- RedrawDebugNormal = {},
 		RedrawDebugClear = { fg = palette.base, bg = palette.gold },
 		RedrawDebugComposed = { fg = palette.base, bg = palette.pine },
@@ -977,8 +977,7 @@ local function set_highlights()
 		AvanteReversedThirdTitle = { fg = palette.iris },
 
 		-- Saghen/blink.cmp
-		BlinkCmpDoc = { bg = palette.highlight_low },
-		BlinkCmpDocSeparator = { bg = palette.highlight_low },
+		BlinkCmpDoc = { fg = palette.text },
 		BlinkCmpDocBorder = { fg = palette.highlight_high },
 		BlinkCmpGhostText = { fg = palette.muted },
 
@@ -1062,6 +1061,8 @@ local function set_highlights()
 		TelescopeSelectionCaret = { fg = palette.rose },
 
 		TroubleNormal = { bg = "NONE" },
+
+		WinBarNC = { fg = palette.muted, bg = "NONE" },
 
 		WhichKeyFloat = { bg = "NONE" },
 		WhichKeyNormal = { bg = "NONE" },
