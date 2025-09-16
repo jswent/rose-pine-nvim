@@ -978,6 +978,8 @@ local function set_highlights()
 		AvanteReversedSubtitle = { fg = palette.foam },
 		AvanteThirdTitle = { fg = palette.highlight_med, bg = palette.iris },
 		AvanteReversedThirdTitle = { fg = palette.iris },
+		AvantePromptInput = { fg = palette.text, bg = groups.panel },
+		AvantePromptInputBorder = { fg = groups.border },
 
 		-- Saghen/blink.cmp
 		BlinkCmpDoc = { fg = palette.text },
@@ -1031,6 +1033,39 @@ local function set_highlights()
 		Sneak = { fg = palette.base, bg = palette.love },
 		SneakCurrent = { link = "StatusLineTerm" },
 		SneakScope = { link = "IncSearch" },
+
+		-- sindrets/diffview.nvim
+		DiffviewPrimary = { fg = palette.pine },
+		DiffviewSecondary = { fg = palette.foam },
+		DiffviewNormal = { fg = palette.text, bg = palette.surface },
+		DiffviewWinSeparator = { fg = palette.text, bg = palette.surface },
+
+		DiffviewFilePanelTitle = { fg = palette.foam, bold = styles.bold },
+		DiffviewFilePanelCounter = { fg = palette.rose },
+		DiffviewFilePanelRootPath = { fg = palette.foam, bold = styles.bold },
+		DiffviewFilePanelFileName = { fg = palette.text },
+		DiffviewFilePanelSelected = { fg = palette.gold },
+		DiffviewFilePanelPath = { link = "Comment" },
+
+		DiffviewFilePanelInsertions = { fg = groups.git_add },
+		DiffviewFilePanelDeletions = { fg = groups.git_delete },
+		DiffviewFilePanelConflicts = { fg = groups.git_merge },
+		DiffviewFolderName = { fg = palette.foam, bold = styles.bold },
+		DiffviewFolderSign = { fg = palette.subtle },
+		DiffviewHash = { fg = palette.rose },
+		DiffviewReference = { fg = palette.foam, bold = styles.bold },
+		DiffviewReflogSelector = { fg = palette.rose },
+		DiffviewStatusAdded = { fg = groups.git_add },
+		DiffviewStatusUntracked = { fg = groups.untracked },
+		DiffviewStatusModified = { fg = groups.git_change },
+		DiffviewStatusRenamed = { fg = groups.git_rename },
+		DiffviewStatusCopied = { fg = groups.untracked },
+		DiffviewStatusTypeChange = { fg = groups.git_change },
+		DiffviewStatusUnmerged = { fg = groups.git_change },
+		DiffviewStatusUnknown = { fg = groups.git_delete },
+		DiffviewStatusDeleted = { fg = groups.git_delete },
+		DiffviewStatusBroken = { fg = groups.git_delete },
+		DiffviewStatusIgnored = { fg = groups.git_ignore },
 	}
 	local transparency_highlights = {
 		DiagnosticVirtualTextError = { fg = groups.error },
