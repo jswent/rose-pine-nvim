@@ -1100,6 +1100,7 @@ local function set_highlights()
 
 		TroubleNormal = { bg = "NONE" },
 
+		WinBar = { fg = palette.subtle, bg = "NONE" },
 		WinBarNC = { fg = palette.muted, bg = "NONE" },
 
 		WhichKeyFloat = { bg = "NONE" },
